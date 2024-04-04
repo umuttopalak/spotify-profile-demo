@@ -1,4 +1,4 @@
-const clientId = "";
+const clientId = "204a3af18c3c44219bb7edfbc7366843";
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
 
@@ -96,5 +96,5 @@ function populateUI(profile: any) {
   document.getElementById("url")!.innerText = profile.href;
   document.getElementById("url")!.setAttribute("href", profile.href);
   document.getElementById("imgUrl")!.innerText =
-    profile.images[0]?.url ?? "(no profile image)";
+    profile.images[1]?.url ?? "(no profile image)";
 }
